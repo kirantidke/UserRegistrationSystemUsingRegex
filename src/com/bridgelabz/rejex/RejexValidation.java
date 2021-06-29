@@ -5,6 +5,7 @@ import java.util.regex.Pattern;
 
 public class RejexValidation {
 	private static final String EMAIL_PATTERN = "^[a-zA-Z0-9]{1,}[.]{0,1}[a-zA-Z0-9]{0,}+@[a-zA-Z0-9]+.[a-zA-Z]{2,3}[.]{0,1}[a-zA-Z]{0,}";
+	private static final String MOBILE_NO_PATTERN = "^[0-9]{0,2}[ ][0-9]{10}";
 	final String NAME_PATTERN = "^[A-Z]{1}[a-z]{2,}";
 
 	public boolean validateFirstName(String firstName) {
@@ -26,5 +27,9 @@ public class RejexValidation {
 		Matcher matcher = pattern.matcher(input);
 		boolean result = matcher.matches();
 		return result;
+	}
+
+	public boolean validateMobilNumber(String mobileNumber) {
+		return patternChecker(mobileNumber, MOBILE_NO_PATTERN);
 	}
 }
