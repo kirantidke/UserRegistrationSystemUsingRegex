@@ -8,6 +8,7 @@ public class Validator {
 	RejexValidation regexValidation = new RejexValidation();
 
 	public String firstName() {
+		
 		System.out.println();
 		System.out.println("Enter First Name:");
 		String firstName = sc.nextLine();
