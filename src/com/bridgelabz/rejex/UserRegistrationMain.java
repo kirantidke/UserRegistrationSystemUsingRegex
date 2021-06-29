@@ -8,5 +8,6 @@ public class UserRegistrationMain {
 		Validator validator = new Validator();
 		validator.firstName();
 		validator.lastName();
+		validator.emailId();
 	}
 }
