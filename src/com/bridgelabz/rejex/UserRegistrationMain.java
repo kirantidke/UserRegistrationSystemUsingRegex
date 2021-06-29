@@ -10,5 +10,6 @@ public class UserRegistrationMain {
 		validator.lastName();
 		validator.emailId();
 		validator.mobileNumber();
+		validator.password();
 	}
 }
