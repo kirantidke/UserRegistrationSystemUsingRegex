@@ -41,12 +41,10 @@ public class Validator {
 		if (result) {
 			System.out.println("Email Address is valid");
 			return emailId;
-
 		} else {
 			System.out.println("Email Address is not valid , Enter correct Email Adress");
 			return emailId();
 		}
-
 	}
 
 	public String mobileNumber() {
@@ -56,12 +54,10 @@ public class Validator {
 		if (result) {
 			System.out.println("Mobile Number is valid");
 			return mobileNumber;
-
 		} else {
 			System.out.println("Mobile Number is not valid , Enter correct Phone N");
 			return mobileNumber();
 		}
-
 	}
 
 	public String password() {
